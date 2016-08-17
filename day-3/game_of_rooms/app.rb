@@ -40,7 +40,7 @@ while input != "EXIT"
 				puts "You are facing north in a room with 4 doors. Pick a door. [ N, S, W, E] type [ exit ] to quit."
 			end
 	when "S"
-		puts "You found the janitor's closet. Just a bunch of mops and brooms."				
+		puts "You found the janitor's closet. Just a bunch of mops and brooms."
 		puts "Exits: [ back ]"
 		print "> "
 	when "BACK"
