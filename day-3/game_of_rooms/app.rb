@@ -15,13 +15,13 @@ while input != "EXIT"
 		choice = gets.chomp
 			if choice == "stomp"
 				puts "'Arrrggh,' you say. Now the ground is all slimy."
-				break
+				puts "Exits: [ back ]"
 			elsif choice == "pick"
 				puts "You take a bite. Eww, it's gross."
-				break
+				puts "Exits: [ back ]"
 			elsif choice == "throw"
 				puts "Smash!! The tomato has been destroyed."
-				break
+				puts "Exits: [ back ]"
 			elsif choice == "back" 
 				puts "You are facing north in a room with 4 doors. Pick a door. [ N, S, W, E] type [ exit ] to quit."
 			end
@@ -32,23 +32,20 @@ while input != "EXIT"
 		choice = gets.chomp
 			if choice == "shut"
 				puts "You shut all the windows."
-				break
+				puts "Exits: [ back ]"
 			elsif choice == "shatter"
 				puts "All the windows are shattered. Now you feel a nice breeze."
-				break
+				puts "Exits: [ back ]"
 			elsif choice == "back"
 				puts "You are facing north in a room with 4 doors. Pick a door. [ N, S, W, E] type [ exit ] to quit."
 			end
 	when "S"
-		puts "You found the janitor's closet. Just a bunch of mops and brooms. Type [ back ] to return to the back room."				
+		puts "You found the janitor's closet. Just a bunch of mops and brooms."				
 		puts "Exits: [ back ]"
 		print "> "
 	when "BACK"
-		puts "You are facing north in a room with 3 doors. Pick a door. [ W, N, E ] type [ exit ] to quit."
+		puts "You are facing north in a room with 4 doors. Pick a door. [ N, S, W, E ] type [ exit ] to quit."
 		print "> "
-		if gets.chomp == "BACK"
-			puts "You're already there."
-		end
 	when "EXIT"
 		break
 	else
