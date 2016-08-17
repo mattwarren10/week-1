@@ -15,11 +15,6 @@ movies_array.each do |movie_title|
 	# puts "-" * 30
 end
 
-movies.each do |m|
-	puts m.title
-	puts m.rating.round
-
-end
 
 9.downto(1) do |rating|
 	print "#{rating}"
@@ -31,22 +26,21 @@ end
 			print '_'
 		end
 	end
-	puts "!"
+	puts "|"
 end
 
-# puts "  ___________"
-# puts "10|_|_|_|_|_|"
-# puts "9 |_|_|_|_|_|"
-# puts "8 |_|_|_|_|_|"
-# puts "7 |_|_|_|_|_|"
-# puts "6 |_|_|_|_|_|"
-# puts "5 |_|_|_|_|_|"
-# puts "4 |_|_|_|_|_|"
-# puts "3 |_|_|_|_|_|"
-# puts "2 |_|_|_|_|_|"
-# puts "1 |_|_|_|_|_|"
+print " "
+(1).upto(movies.length).each do |m|
+	print "|#{m}"
+end
 
+puts "|"
 
+index = 1
+movies.each do |m|
+	puts "#{index}. #{m.title} (#{m.rating.round})"
+	index += 1
+end
 
 
 # the_search = Imdb::Search.new(movie_title)
