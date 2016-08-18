@@ -1,0 +1,15 @@
+use a hash to take action on objects.
+key is action, value is return string.
+
+every room has a description
+every room has objects in a hash. the key is the action performed on the object, the value is the return string.
+one can perform an action on objects.
+one can leave a room, only to return to the main room.
+
+the game holds the rooms and current location of the player.
+when user enters input to change rooms the location changes.
+
+
+the main room has 4 rooms ( n, e, s, w )
+when one enters a room, the only way out is to go back.
+

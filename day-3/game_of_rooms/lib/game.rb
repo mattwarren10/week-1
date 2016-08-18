@@ -2,25 +2,38 @@ require 'pry'
 require_relative 'rooms.rb'
 class Game
 	attr_accessor :rooms, :location
-	def initialize(array)
+	def initialize(array, main_room)
 		@rooms = array
-		@location = @rooms[0]
+		@main_room = main_room
+		@location = main_room
 	end
 
 	def change_room(input)	
 		case input
 			when "n"
-				@location = @rooms[1]
+				puts @location = @rooms[0].description
 			when "e"
-				@location = @rooms[2]
+				puts @location = @rooms[1].description
 			when "s"
-				@location = @rooms[3]
+				puts @location = @rooms[2].description
 			when "w"
-				@location = @rooms[4]
+				puts @location = @rooms[3].description
 			when "back"
-				@location = @rooms[0]
+				puts @location = @rooms[4].description
+			when "exit"
+				puts "You have quit."
 			else
 				puts "That's an invalid option. Try again."
+		end
+	end
+
+	def act_on_an_object(input)
+		case input
+			when "exit"
+				puts "You have quit"
+			when "stomp"
+				puts @rooms[0].objects[:stomp]
+				
 		end
 	end
 end
