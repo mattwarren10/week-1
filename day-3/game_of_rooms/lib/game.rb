@@ -1,6 +1,7 @@
 require 'pry'
 require_relative 'rooms.rb'
 class Game
+	attr_accessor :rooms, :location
 	def initialize(array)
 		@rooms = array
 		@location = @rooms[0]

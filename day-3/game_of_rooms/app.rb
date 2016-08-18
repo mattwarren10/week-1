@@ -11,10 +11,10 @@ rooms = [ main, north, east, south, west ]
 
 input = ""
 while (input != "exit")
-	binding.pry
 	new_game = Game.new(rooms)
-	puts @location
+	p new_game.location
 	puts "Where do you want to go?"
 	print "> "
 	input = gets.chomp
+	new_game.change_room(input)
 end
