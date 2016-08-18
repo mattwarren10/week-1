@@ -1,3 +1,4 @@
+require 'pry'
 require_relative("lib/rooms.rb")
 require_relative("lib/game.rb")
 
@@ -12,16 +13,18 @@ rooms = [ north, east, south, west ]
 input = ""
 new_game = Game.new(rooms, main)
 puts new_game.location.description
-puts "Where do you want to go?"
-puts rooms[0].exit
 while (input != "exit")
 	print "> "
 	input = gets.chomp
 	if input.size == 1
 		new_game.change_room(input)
+		print "> "
+		puts rooms[0].exit
+	elsif input.size > 1
+		new_game.act_on_an_object(input)
+		puts rooms[0].exit
 	end
-	input = gets.chomp
-	new_game.act_on_an_object(input)
+	
 end
 
 
