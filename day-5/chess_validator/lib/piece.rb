@@ -1,6 +1,6 @@
 # lib/rook.rb
 
-class Rook
+class Piece
   def initialize(x, y, color)
     @x = x
     @y = y
@@ -17,3 +17,4 @@ class Rook
     end
   end
 end
+
