@@ -83,7 +83,9 @@ game.add_piece(7, 1, white_pawn8)
 	end
 	puts "|"
 end
-binding.pry
+game.can_move?(6, 7, 5, 5)
+
+# binding.pry
 # 7.downto(0) do |piece|
 # 	print "#{piece}"
 # 	movies.each do |m|
@@ -144,9 +146,9 @@ binding.pry
 # puts "Valid Knight movements"
 # puts "--------------------"
 
-# p black_knight.can_move?(6, 6) == "yes"
-# p black_knight.can_move?(8, 6) == "yes"
-# p black_knight.can_move?(5, 7) == "yes"
+# p black_knight2.can_move?(5, 5) == "yes"
+# p black_knight2.can_move?(8, 6) == "yes"
+# p black_knight2.can_move?(4, 6) == "yes"
 
 # puts "Invalid Knight movements"
 # puts "--------------------"
@@ -196,8 +198,8 @@ binding.pry
 
 # puts "Invalid Pawn movements"
 # puts "--------------------"
-# p black_pawn.can_move?(5, 6) == "yes"
-# p black_pawn.can_move?(5, 5) == "yes"
+# p black_pawn5.can_move?(5, 4) == "yes"
+# p black_pawn5.can_move?(5, 5) == "yes"
 
 
 # puts ""
@@ -207,7 +209,7 @@ binding.pry
 # p black_pawn.can_move?(4, 7) == "no"
 # p black_pawn.can_move?(6, 5) == "no"
 
-# ************************** WHITE PAWN ************************
+# # ************************** WHITE PAWN ************************
 
 # puts "Invalid Pawn movements"
 # puts "--------------------"
