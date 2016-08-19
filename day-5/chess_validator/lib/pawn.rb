@@ -7,12 +7,24 @@ class Pawn < Piece
   end
 
   def can_move?(final_x, final_y)
-  	if final_x - @x == 0 && final_y - @y == -1
-  		"yes"
-  	elsif final_x - @x == 0 && final_y - @y == -2
-  		"yes"
-    else
-      "no"
-  	end
+    if @color == "black"
+    	if final_x - @x == 0 && final_y - @y == -1
+    		"yes"
+    	elsif final_x - @x == 0 && final_y - @y == -2
+    		"yes"
+      else
+        "no"
+    	end
+    end
+
+    if @color == "white"
+      if final_x - @x == 0 && final_y - @y == 1
+        "yes"
+      elsif final_x - @x == 0 && final_y - @y == 2
+        "yes"
+      else
+        "no"
+      end
+    end
   end
 end
