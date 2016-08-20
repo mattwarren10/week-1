@@ -25,14 +25,14 @@ white_queen = Queen.new(3, 0, "white", "wQ")
 black_king = King.new(4, 7, "black", "bK")
 white_king = King.new(4, 0, "white", "wK")
 
-black_pawn1 = Pawn.new(1, 6, "black", "bP")
-black_pawn2 = Pawn.new(2, 6, "black", "bP")
-black_pawn3 = Pawn.new(3, 6, "black", "bP")
-black_pawn4 = Pawn.new(4, 6, "black", "bP")
-black_pawn5 = Pawn.new(5, 6, "black", "bP")
-black_pawn6 = Pawn.new(6, 6, "black", "bP")
-black_pawn7 = Pawn.new(7, 6, "black", "bP")
-black_pawn8 = Pawn.new(8, 6, "black", "bP")
+black_pawn1 = Pawn.new(0, 6, "black", "bP")
+black_pawn2 = Pawn.new(1, 6, "black", "bP")
+black_pawn3 = Pawn.new(2, 6, "black", "bP")
+black_pawn4 = Pawn.new(3, 6, "black", "bP")
+black_pawn5 = Pawn.new(4, 6, "black", "bP")
+black_pawn6 = Pawn.new(5, 6, "black", "bP")
+black_pawn7 = Pawn.new(6, 6, "black", "bP")
+black_pawn8 = Pawn.new(7, 6, "black", "bP")
 white_pawn1 = Pawn.new(0, 1, "white", "wP")
 white_pawn2 = Pawn.new(1, 1, "white", "wP")
 white_pawn3 = Pawn.new(2, 1, "white", "wP")
@@ -185,20 +185,22 @@ game.can_move?(5, 7, 3, 5) #Black Bishop
 
 # ************************** BLACK PAWN ************************
 
-# puts "Valid Pawn movements"
-# puts "--------------------"
-# p black_pawn1.can_move?(1, 5) == "yes"
-# p black_pawn2.can_move?(2, 5) == "yes"
-# p black_pawn5.can_move?(5, 4) == "yes"
-# p black_pawn5.can_move?(5, 5) == "yes"
+puts "Valid Pawn movements"
+puts "--------------------"
+p black_pawn1.can_move?(0, 5) == "yes"
+p black_pawn2.can_move?(1, 5) == "yes"
+p black_pawn3.can_move?(2, 5) == "yes"
+p black_pawn4.can_move?(3, 5) == "yes"
+p black_pawn5.can_move?(4, 4) == "yes"
+p black_pawn6.can_move?(5, 5) == "yes"
 
 
-# puts ""
+puts ""
 
-# puts "Invalid Pawn movements"
-# puts "--------------------"
-# p black_pawn5.can_move?(3, 6) == "no"
-# p black_pawn5.can_move?(5, 3) == "no"
+puts "Invalid Pawn movements"
+puts "--------------------"
+p black_pawn5.can_move?(3, 6) == "no"
+p black_pawn5.can_move?(5, 3) == "no"
 
 # # ************************** WHITE PAWN ************************
 
