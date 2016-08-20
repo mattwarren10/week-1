@@ -194,6 +194,7 @@ p black_pawn4.can_move?(3, 5) == "yes"
 p black_pawn5.can_move?(4, 4) == "yes"
 p black_pawn6.can_move?(5, 5) == "yes"
 
+p white_pawn1.can_move?(0, 2) == "yes"
 
 puts ""
 
