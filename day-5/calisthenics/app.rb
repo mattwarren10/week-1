@@ -17,11 +17,31 @@ def factorial(num)
 		multiplier *= num
 	end
 	puts multiplier
+end
 
+def time_conversion(num)
+	hours = 0
+	min = 0
+	hours = (num / 60.0).floor
+	min = (((num / 60.0) - hours) * 60).round
+	if min != 0
+		puts "#{hours}:#{min}"
+	else
+		puts "#{hours}:00"
+	end
 end
 
 
 
+power(4, 3)
 power(10, 3)
+
 reverse("Race car")
+reverse("Hannah")
+
 factorial(5)
+factorial(8)
+
+time_conversion(500)
+time_conversion(700)
+time_conversion(900)
