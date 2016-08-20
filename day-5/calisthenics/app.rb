@@ -1,9 +1,27 @@
 def power(base, exponent)
 	current_number = base
 	2.upto(exponent) do |num|
-		current_number = current_number * base
+		current_number *= base
 	end
 	puts current_number
 end
 
-power(4, 4)
+def reverse(str)
+	reverse_str = str.reverse
+	puts reverse_str
+end
+
+def factorial(num)
+	multiplier = 1
+	1.upto(num) do |num|
+		multiplier *= num
+	end
+	puts multiplier
+
+end
+
+
+
+power(10, 3)
+reverse("Race car")
+factorial(5)
