@@ -196,18 +196,19 @@ game.can_move?(6, 7, 5, 5)
 
 # ************************** BLACK PAWN ************************
 
-# puts "Invalid Pawn movements"
-# puts "--------------------"
-# p black_pawn5.can_move?(5, 4) == "yes"
-# p black_pawn5.can_move?(5, 5) == "yes"
+puts "ValidPawn movements"
+puts "--------------------"
+p black_pawn1.can_move?(1, 5) == "yes"
+p black_pawn5.can_move?(5, 4) == "yes"
+p black_pawn5.can_move?(5, 5) == "yes"
 
 
-# puts ""
+puts ""
 
-# puts "Invalid Pawn movements"
-# puts "--------------------"
-# p black_pawn.can_move?(4, 7) == "no"
-# p black_pawn.can_move?(6, 5) == "no"
+puts "Invalid Pawn movements"
+puts "--------------------"
+p black_pawn5.can_move?(3, 6) == "no"
+p black_pawn5.can_move?(5, 3) == "no"
 
 # # ************************** WHITE PAWN ************************
 
