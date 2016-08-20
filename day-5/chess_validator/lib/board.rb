@@ -21,6 +21,8 @@ class Board
 				puts @pieces[y][x].name
 				if @pieces[y][x].can_move?(new_x, new_y) == "yes"
 					puts "Good move."
+				else
+					puts "Nope. Can't do that."
 				end
 			end
 		else

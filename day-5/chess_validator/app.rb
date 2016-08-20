@@ -83,21 +83,10 @@ game.add_piece(7, 1, white_pawn8)
 	end
 	puts "|"
 end
-game.can_move?(6, 7, 5, 5)
-
-# binding.pry
-# 7.downto(0) do |piece|
-# 	print "#{piece}"
-# 	movies.each do |m|
-# 		print "|"
-# 		if m.rating.round >= rating
-# 			print '#'
-# 		else
-# 			print '_'
-# 		end
-# 	end
-# 	puts "|"
-# end
+game.can_move?(6, 7, 5, 5) #Black Knight
+game.can_move?(0, 1, 0, 2) #White Pawn
+game.can_move?(4, 6, 4, 5) #Black Pawn
+game.can_move?(5, 7, 3, 5) #Black Bishop
 
 # *********************** ROOK *****************************
 
@@ -196,19 +185,20 @@ game.can_move?(6, 7, 5, 5)
 
 # ************************** BLACK PAWN ************************
 
-puts "ValidPawn movements"
-puts "--------------------"
-p black_pawn1.can_move?(1, 5) == "yes"
-p black_pawn5.can_move?(5, 4) == "yes"
-p black_pawn5.can_move?(5, 5) == "yes"
+# puts "Valid Pawn movements"
+# puts "--------------------"
+# p black_pawn1.can_move?(1, 5) == "yes"
+# p black_pawn2.can_move?(2, 5) == "yes"
+# p black_pawn5.can_move?(5, 4) == "yes"
+# p black_pawn5.can_move?(5, 5) == "yes"
 
 
-puts ""
+# puts ""
 
-puts "Invalid Pawn movements"
-puts "--------------------"
-p black_pawn5.can_move?(3, 6) == "no"
-p black_pawn5.can_move?(5, 3) == "no"
+# puts "Invalid Pawn movements"
+# puts "--------------------"
+# p black_pawn5.can_move?(3, 6) == "no"
+# p black_pawn5.can_move?(5, 3) == "no"
 
 # # ************************** WHITE PAWN ************************
 
