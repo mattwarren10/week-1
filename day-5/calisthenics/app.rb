@@ -31,6 +31,12 @@ def time_conversion(num)
 	end
 end
 
+def count_vowels(str)
+	vowels = 0
+	vowels = str.scan(/[aeoui]/).count
+	puts vowels
+end
+
 
 
 power(4, 3)
@@ -45,3 +51,6 @@ factorial(8)
 time_conversion(500)
 time_conversion(700)
 time_conversion(900)
+
+
+count_vowels("hello")
