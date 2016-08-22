@@ -37,6 +37,10 @@ def count_vowels(str)
 	puts vowels
 end
 
+def uniques
+	
+end
+
 
 
 power(4, 3)
